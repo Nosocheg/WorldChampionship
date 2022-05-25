@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Команда"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvFlag"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFlag"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:gravity="center"
+        android:text="Флаг"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvGames"
+        app:layout_constraintStart_toEndOf="@id/tvName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGames"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:gravity="center"
+        android:text="Игры"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvWins"
+        app:layout_constraintStart_toEndOf="@id/tvFlag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWins"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:gravity="center"
+        android:text="В"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvDraws"
+        app:layout_constraintStart_toEndOf="@id/tvGames"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDraws"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:gravity="center"
+        android:text="Н"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvLoses"
+        app:layout_constraintStart_toEndOf="@id/tvWins"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLoses"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvGoals"
+        app:layout_constraintStart_toEndOf="@id/tvDraws"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="П" />
+
+    <TextView
+        android:id="@+id/tvGoals"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:gravity="center"
+        android:text="Мячи"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvScore"
+        app:layout_constraintStart_toEndOf="@id/tvLoses"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:text="Очки"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvGoals"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
